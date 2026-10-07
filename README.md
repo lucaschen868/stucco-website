@@ -1,6 +1,6 @@
-# STUCCO Website
+# STUCO Website
 
-Website for STUCCO, our student council.
+Website for STUCO, our student council.
 
 ## Structure
 - `index.html` – main page
