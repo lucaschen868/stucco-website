@@ -47,6 +47,9 @@ footer { background: var(--cream); text-align: center; padding: 2rem 1.5rem; mar
 .card-wide { grid-column: 1 / -1; }
 .card-wide .img-ph { aspect-ratio: 16 / 7; }
 @media (max-width: 600px) { .cards-2 { grid-template-columns: 1fr; } }
+.contact-list .card { background: var(--cream); padding: 1.75rem 1rem; }
+.contact-list .card h3 { font-size: 1.8rem; }
+.contact-list .card p { font-size: 1.25rem; overflow-wrap: anywhere; }
 .pager { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin-top: 2rem; }
 .pager > :first-child { justify-self: start; }
 .pager > :last-child { justify-self: end; }
