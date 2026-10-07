@@ -43,7 +43,14 @@ footer { background: var(--cream); text-align: center; padding: 2rem 1.5rem; mar
 .footer-title { color: var(--maroon); font-size: 1.4rem; margin: 0 0 .25rem; }
 .copy { opacity: .7; font-size: .95rem; }
 @media (max-width: 600px) { .brand { width: 100%; } }
-.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem; }
+.cards-2 { grid-template-columns: repeat(2, 1fr); max-width: 760px; margin-left: auto; margin-right: auto; }
+.card-wide { grid-column: 1 / -1; }
+.card-wide .img-ph { aspect-ratio: 16 / 7; }
+@media (max-width: 600px) { .cards-2 { grid-template-columns: 1fr; } }
+.pager { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin-top: 2rem; }
+.pager > :first-child { justify-self: start; }
+.pager > :last-child { justify-self: end; }
+.pager > :nth-child(2) { text-align: center; }
 .pillar h3 a { text-decoration: none; }
 .pillar h3 a:hover { text-decoration: underline; }
 
@@ -69,3 +76,4 @@ img { max-width: 100%; height: auto; }
 .band-section .card { box-shadow: 0 2px 8px rgba(0,0,0,.07); }
 .hero { background-image: repeating-linear-gradient(115deg, rgba(255,255,255,.04) 0 90px, transparent 90px 200px); }
 @media (max-width: 700px) { .split { grid-template-columns: 1fr; } .split.flip > :first-child { order: 0; } }
+.button-lg { font-family: "Oswald", sans-serif; font-size: 1.6rem; padding: .6rem 1.6rem; margin-bottom: 1rem; }
